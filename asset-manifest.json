@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/backendless-cms-test-task/static/css/main.b7d0ba3d.css",
-    "main.js": "/backendless-cms-test-task/static/js/main.f40c879a.js",
+    "main.js": "/backendless-cms-test-task/static/js/main.fc0a8155.js",
     "static/js/787.3a0421c8.chunk.js": "/backendless-cms-test-task/static/js/787.3a0421c8.chunk.js",
     "index.html": "/backendless-cms-test-task/index.html",
     "main.b7d0ba3d.css.map": "/backendless-cms-test-task/static/css/main.b7d0ba3d.css.map",
-    "main.f40c879a.js.map": "/backendless-cms-test-task/static/js/main.f40c879a.js.map",
+    "main.fc0a8155.js.map": "/backendless-cms-test-task/static/js/main.fc0a8155.js.map",
     "787.3a0421c8.chunk.js.map": "/backendless-cms-test-task/static/js/787.3a0421c8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b7d0ba3d.css",
-    "static/js/main.f40c879a.js"
+    "static/js/main.fc0a8155.js"
   ]
 }
