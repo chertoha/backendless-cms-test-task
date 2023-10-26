@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/backendless-cms-test-task/static/css/main.073c9b0a.css",
-    "main.js": "/backendless-cms-test-task/static/js/main.05faec88.js",
+    "main.css": "/backendless-cms-test-task/static/css/main.b7d0ba3d.css",
+    "main.js": "/backendless-cms-test-task/static/js/main.f40c879a.js",
     "static/js/787.3a0421c8.chunk.js": "/backendless-cms-test-task/static/js/787.3a0421c8.chunk.js",
-    "static/media/logo.svg": "/backendless-cms-test-task/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/backendless-cms-test-task/index.html",
-    "main.073c9b0a.css.map": "/backendless-cms-test-task/static/css/main.073c9b0a.css.map",
-    "main.05faec88.js.map": "/backendless-cms-test-task/static/js/main.05faec88.js.map",
+    "main.b7d0ba3d.css.map": "/backendless-cms-test-task/static/css/main.b7d0ba3d.css.map",
+    "main.f40c879a.js.map": "/backendless-cms-test-task/static/js/main.f40c879a.js.map",
     "787.3a0421c8.chunk.js.map": "/backendless-cms-test-task/static/js/787.3a0421c8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.05faec88.js"
+    "static/css/main.b7d0ba3d.css",
+    "static/js/main.f40c879a.js"
   ]
 }
