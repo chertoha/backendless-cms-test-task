@@ -3,13 +3,16 @@ import App from "components/App";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter } from "react-router-dom";
 import { GlobalStyle } from "./styles/global.styled";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <GlobalStyle />
-    <App />
+    <BrowserRouter basename="/backendless-cms-test-task">
+      <GlobalStyle />
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
 
