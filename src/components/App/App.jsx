@@ -37,10 +37,18 @@ const App = () => {
 
   const routeElements = orderedTabs.map(({ id, path }) => {
     // <Route key={id} path={id} lazy={() => import(path)} />
-    console.log(path);
-    const Component = lazy(() => import(path));
-    // const Component = lazy(() => import("tabs/dummyTable.js"));
+    // console.log(path);
+    const temp = "tabs/dummyTable.js";
+    const Component = lazy(() => {
+      // console.log(await import(temp));
+      console.log(import(temp));
+      // import(temp).then(console.log);
+      // console.log("RES", res);
+      // return import("tabs/dummyTable.js");
+    });
+
     return <Route key={id} path={id} element={<Component />} />;
+    // const Component = lazy(() => import("tabs/dummyTable.js"));
     // return <Route key={id} path={id} element={<Table />} />;
   });
 
@@ -48,7 +56,7 @@ const App = () => {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
-        {routeElements}
+        {/* {routeElements} */}
         {/* {orderedTabs.map(({ id, title, path }) => (
           <Route key={id} path={id} lazy={() => import(path)} />
         ))} */}
