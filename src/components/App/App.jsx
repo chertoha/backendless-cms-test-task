@@ -1,12 +1,5 @@
 import { lazy } from "react";
-import {
-  Routes,
-  Route,
-  Navigate,
-  createRoutesFromElements,
-} from "react-router-dom";
-import { useEffect } from "react";
-import { useState } from "react";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Layout from "components/Layout";
 import { useGetTabsQuery } from "redux/tabs/tabsApi";
 import { sortArrayByObjectProp } from "utils/sortArrayByObjectProp";
