@@ -8,11 +8,13 @@ import {
 import { useEffect } from "react";
 import { useState } from "react";
 import Layout from "components/Layout";
+// import DummyTable from "tabs/dummyTable.js";
 
-// const Table = lazy(() => import("tabs/dummyTable.js"));
+// const DUMMYTABLE = lazy(() => import("tabs/dummyTable.js"));
 
 const App = () => {
   const [tabs, setTabs] = useState();
+  // const [routes, setRoutes] = useState();
 
   useEffect(() => {
     fetch(
@@ -33,40 +35,23 @@ const App = () => {
     (prevTab, nextTab) => prevTab.order - nextTab.order
   );
 
-  const defaultTabRoute = orderedTabs[0].id;
-
   const routeElements = orderedTabs.map(({ id, path }) => {
-    // <Route key={id} path={id} lazy={() => import(path)} />
-    // console.log(path);
-    const temp = "tabs/dummyTable.js";
-    const Component = lazy(() => {
-      // console.log(await import(temp));
-      console.log(import(temp));
-      // import(temp).then(console.log);
-      // console.log("RES", res);
-      // return import("tabs/dummyTable.js");
-    });
-
+    const Component = lazy(() => import(`../../${path}`));
     return <Route key={id} path={id} element={<Component />} />;
-    // const Component = lazy(() => import("tabs/dummyTable.js"));
-    // return <Route key={id} path={id} element={<Table />} />;
   });
 
+  const defaultTabRoute = orderedTabs[0].id;
+
   console.log(orderedTabs);
+
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
-        {/* {routeElements} */}
-        {/* {orderedTabs.map(({ id, title, path }) => (
-          <Route key={id} path={id} lazy={() => import(path)} />
-        ))} */}
-        {/* <Route
+        {routeElements}
+        <Route
           index={true}
           element={<Navigate to={defaultTabRoute} replace={true} />}
-        /> */}
-
-        {/* <Route path="dummyTable" lazy={() => import("tabs/dummyTable.js")} /> */}
-        {/* <Route path={"dummyTable"} element={<Table />} /> */}
+        />
       </Route>
     </Routes>
   );
