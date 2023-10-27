@@ -1,5 +1,11 @@
+import NavBar from "components/NavBar";
+
 const Header = () => {
-  return <div>HEader</div>;
+  return (
+    <div>
+      <NavBar />
+    </div>
+  );
 };
 
 export default Header;

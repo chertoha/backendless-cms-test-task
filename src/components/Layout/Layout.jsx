@@ -7,7 +7,7 @@ const Layout = () => {
     <div>
       <Header />
       <main>
-        <Suspense>
+        <Suspense fallback={<div>Loading...</div>}>
           <Outlet />
         </Suspense>
       </main>

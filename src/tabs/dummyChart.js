@@ -2,10 +2,18 @@ import React from "react";
 
 const DummyChart = () => (
   <table>
-    <tr>
-      <td>Dummy</td>
-      <td>Chart</td>
-    </tr>
+    <thead>
+      <tr>
+        <th>Dummy</th>
+        <th>Chart</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
   </table>
 );
 export default DummyChart;
