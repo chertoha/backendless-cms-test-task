@@ -3,18 +3,45 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import Layout from "components/Layout";
 import { useGetTabsQuery } from "redux/tabs/tabsApi";
 import { sortArrayByObjectProp } from "utils/sortArrayByObjectProp";
+import TabWrapper from "components/TabWrapper";
+import SpinnerWrapper from "components/SpinnerWrapper";
+import Spinner from "components/Spinner/Spinner";
 
 const App = () => {
-  const { data: tabs } = useGetTabsQuery();
+  const { data: tabs, isFetching, error } = useGetTabsQuery();
 
-  if (!tabs) return <div>Something went wrong! No tabs</div>;
+  if (isFetching) {
+    return (
+      <SpinnerWrapper>
+        <Spinner />
+      </SpinnerWrapper>
+    );
+  }
+
+  if (error) {
+    return (
+      <TabWrapper>
+        <div>Something went wrong! No tabs</div>
+      </TabWrapper>
+    );
+  }
 
   const orderedTabs = sortArrayByObjectProp(tabs, "order");
   const defaultTabRoute = orderedTabs[0].id;
 
   const routes = orderedTabs.map(({ id, path }) => {
     const Component = lazy(() => import(`../../${path}`));
-    return <Route key={id} path={id} element={<Component />} />;
+    return (
+      <Route
+        key={id}
+        path={id}
+        element={
+          <TabWrapper>
+            <Component />
+          </TabWrapper>
+        }
+      />
+    );
   });
 
   console.log(orderedTabs);

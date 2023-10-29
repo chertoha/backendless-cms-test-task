@@ -8,12 +8,6 @@ const DummyTable = () => (
         <th>Table</th>
       </tr>
     </thead>
-    <tbody>
-      <tr>
-        <td></td>
-        <td></td>
-      </tr>
-    </tbody>
   </table>
 );
 export default DummyTable;

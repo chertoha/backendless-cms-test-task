@@ -8,12 +8,6 @@ const DummyChart = () => (
         <th>Chart</th>
       </tr>
     </thead>
-    <tbody>
-      <tr>
-        <td></td>
-        <td></td>
-      </tr>
-    </tbody>
   </table>
 );
 export default DummyChart;
