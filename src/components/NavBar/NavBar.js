@@ -1,6 +1,6 @@
 import { useGetTabsQuery } from "redux/tabs/tabsApi";
 import { sortArrayByObjectProp } from "utils/sortArrayByObjectProp";
-import { List, StyledNavLink } from "./NavBar.styled";
+import { List, ListItem, StyledNavLink } from "./NavBar.styled";
 
 const NavBar = () => {
   const { data: tabs } = useGetTabsQuery();
@@ -10,9 +10,9 @@ const NavBar = () => {
   return (
     <List>
       {orderedTabs.map(({ id, title }) => (
-        <li key={id}>
+        <ListItem key={id}>
           <StyledNavLink to={id}>{title}</StyledNavLink>
-        </li>
+        </ListItem>
       ))}
     </List>
   );

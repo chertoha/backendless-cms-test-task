@@ -1,11 +1,11 @@
-import { lazy } from "react";
-import { Routes, Route, Navigate } from "react-router-dom";
 import Layout from "components/Layout";
-import { useGetTabsQuery } from "redux/tabs/tabsApi";
-import { sortArrayByObjectProp } from "utils/sortArrayByObjectProp";
 import TabWrapper from "components/TabWrapper";
 import SpinnerWrapper from "components/SpinnerWrapper";
 import Spinner from "components/Spinner/Spinner";
+import { lazy } from "react";
+import { Routes, Route, Navigate } from "react-router-dom";
+import { useGetTabsQuery } from "redux/tabs/tabsApi";
+import { sortArrayByObjectProp } from "utils/sortArrayByObjectProp";
 
 const App = () => {
   const { data: tabs, isFetching, error } = useGetTabsQuery();
@@ -43,8 +43,6 @@ const App = () => {
       />
     );
   });
-
-  console.log(orderedTabs);
 
   return (
     <Routes>
