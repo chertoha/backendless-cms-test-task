@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/backendless-cms-test-task/static/css/main.b7d0ba3d.css",
-    "main.js": "/backendless-cms-test-task/static/js/main.1e6dc435.js",
+    "main.js": "/backendless-cms-test-task/static/js/main.833b320b.js",
     "static/js/689.ff86187f.chunk.js": "/backendless-cms-test-task/static/js/689.ff86187f.chunk.js",
     "static/js/888.825f537f.chunk.js": "/backendless-cms-test-task/static/js/888.825f537f.chunk.js",
     "static/js/273.142bf013.chunk.js": "/backendless-cms-test-task/static/js/273.142bf013.chunk.js",
@@ -9,7 +9,7 @@
     "static/js/787.3a0421c8.chunk.js": "/backendless-cms-test-task/static/js/787.3a0421c8.chunk.js",
     "index.html": "/backendless-cms-test-task/index.html",
     "main.b7d0ba3d.css.map": "/backendless-cms-test-task/static/css/main.b7d0ba3d.css.map",
-    "main.1e6dc435.js.map": "/backendless-cms-test-task/static/js/main.1e6dc435.js.map",
+    "main.833b320b.js.map": "/backendless-cms-test-task/static/js/main.833b320b.js.map",
     "888.825f537f.chunk.js.map": "/backendless-cms-test-task/static/js/888.825f537f.chunk.js.map",
     "273.142bf013.chunk.js.map": "/backendless-cms-test-task/static/js/273.142bf013.chunk.js.map",
     "432.f08f7717.chunk.js.map": "/backendless-cms-test-task/static/js/432.f08f7717.chunk.js.map",
@@ -17,6 +17,6 @@
   },
   "entrypoints": [
     "static/css/main.b7d0ba3d.css",
-    "static/js/main.1e6dc435.js"
+    "static/js/main.833b320b.js"
   ]
 }
