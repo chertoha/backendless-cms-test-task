@@ -5,8 +5,6 @@ import { List, StyledNavLink } from "./NavBar.styled";
 const NavBar = () => {
   const { data: tabs } = useGetTabsQuery();
 
-  if (!tabs) return;
-
   const orderedTabs = sortArrayByObjectProp(tabs, "order");
 
   return (
