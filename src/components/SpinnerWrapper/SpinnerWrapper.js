@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { Wrapper } from "./SpinnerWrapper.styled";
 
 const SpinnerWrapper = ({ children }) => {
@@ -5,3 +6,7 @@ const SpinnerWrapper = ({ children }) => {
 };
 
 export default SpinnerWrapper;
+
+SpinnerWrapper.propTypes = {
+  children: PropTypes.node,
+};
