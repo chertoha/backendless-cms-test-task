@@ -1,6 +1,6 @@
-import { NavLink } from "react-router-dom";
 import { useGetTabsQuery } from "redux/tabs/tabsApi";
 import { sortArrayByObjectProp } from "utils/sortArrayByObjectProp";
+import { List, StyledNavLink } from "./NavBar.styled";
 
 const NavBar = () => {
   const { data: tabs } = useGetTabsQuery();
@@ -10,13 +10,13 @@ const NavBar = () => {
   const orderedTabs = sortArrayByObjectProp(tabs, "order");
 
   return (
-    <ul>
+    <List>
       {orderedTabs.map(({ id, title }) => (
         <li key={id}>
-          <NavLink to={id}>{title}</NavLink>
+          <StyledNavLink to={id}>{title}</StyledNavLink>
         </li>
       ))}
-    </ul>
+    </List>
   );
 };
 

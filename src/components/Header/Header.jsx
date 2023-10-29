@@ -1,10 +1,11 @@
+import Container from "components/Container";
 import NavBar from "components/NavBar";
 
 const Header = () => {
   return (
-    <div>
+    <Container>
       <NavBar />
-    </div>
+    </Container>
   );
 };
 
